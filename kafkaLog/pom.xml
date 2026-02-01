@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>quazavr</groupId>
+	<artifactId>kafkaLog</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<java_version>24</java_version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.release>${java_version}</maven.compiler.release>
+		<maven.compiler.target>${java_version}</maven.compiler.target>
+		<maven.compiler.source>${java_version}</maven.compiler.source>
+	</properties>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.2</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+
+	<dependencies>
+		<!--WEB-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!--KAFKA-->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			 </dependency>
+	</dependencies>
+
+</project>
